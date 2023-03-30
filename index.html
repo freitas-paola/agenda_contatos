@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda de Contatos</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <ion-icon class="telefone" name="call"></ion-icon>
+        <h1>Agenda de Contatos</h1>
+      </header>
+      <form id="form-contatos">
+        <input id="nome-contato" type="text" required placeholder="Nome" />
+        <input
+          id="telefone-contato"
+          type="tel"
+          required
+          placeholder="Telefone"
+        />
+        <button id="button" type="submit">Adicionar +</button>
+      </form>
+      <p id="error" class="display"></p>
+    </div>
+    <table cellspacing="0">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Nome</th>
+          <th>Telefone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><div class="icon">?</div></td>
+          <td>---</td>
+          <td>---</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
